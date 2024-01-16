@@ -16,7 +16,7 @@ The following commands will set up a gateway instance named ``mygw`` on a Linux 
     sudo python -m p4p.gw --example-config /etc/pvagw/mygw.conf
       # generate a systemd unit file to support the gateway
     sudo python -m p4p.gw --example-systemd \
-         /etc/systemd/system/pvagw@.service
+         /etc/systemd/system/pvagw@mygw.service
       # start the gateway
     sudo systemctl daemon-reload
     sudo systemctl start pvagw@mygw.service
